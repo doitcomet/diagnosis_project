@@ -6,10 +6,10 @@ from werkzeug.utils import secure_filename
 app = Flask(__name__)
 CORS(app)
 
+#accesskey는 카톡에 저장되어있음.! s3비번도 
 s3_client = boto3.client(
     's3',
     aws_access_key_id='AKIA47CR2RIJTJZY367M',
-    aws_secret_access_key='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',
     region_name='ap-northeast-1'
 )
 
